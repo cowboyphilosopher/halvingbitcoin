@@ -1,6 +1,8 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 
 export default function HomePage() {
+  const router = useRouter();
    return (
 
     <div className="bg-orange-500 h-screen flex flex-col items-center justify-center text-white">
