@@ -9,16 +9,18 @@ const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 const BitcoinPage = () => {
   return (
     <>
-      <div className="flex flex-col h-screen justify-center items-center gap-4 bg-orange-500 text-center">
-        <div className="text-white text-xl font-bold">
-          Do you halve Bitcoin?
+      <div className="flex flex-col h-screen justify-center items-center gap-2 bg-orange-500 text-center">
+        <div className="text-white ">
+          Do you ha(l)ve Bitcoin?
         </div>
         <div>
-          <Button className="border rounded px-4 py-2 border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+          <Link
+              className="border rounded px-4 py-2 border-white text-base font-medium rounded-md text-white bg-orange-500 hover:bg-orange-700"
+              href={"/intro"}
+            >
             We should party
-          </Button>
+            </Link>
         </div>
-        
       </div>
     </>
   )
