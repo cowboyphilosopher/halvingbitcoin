@@ -2,19 +2,28 @@
 import React from 'react';
 import Link from 'next/link';
 import { Button } from "components/Button/Button";
- 
-export default function HomePage() {
- 
-export default function HomePage() {
+import siteMetadata from 'data/siteMetadata';
+import dynamic from 'next/dynamic';
+
+export default function Home() {
+  const root =
+    typeof window === 'undefined'
+      ? { classList: { toggle: () => null }, getElementsByClassName: () => null }
+      : window.document.documentElement;
+  root.classList.toggle('dark'); // toggle to dark initially
 
   return (
-    <div className="bg-orange-500 h-screen flex flex-col items-center justify-center text-white">
-      <h1>Do you ha(l)ve Bitcoin? We should party.</h1>
-      <Link href="/bitcoin" passHref>
-          <Button as="a" className="border-black border-2 w-1/10 h-3/20">
-              PRESS ME PLEASE
-          </Button>
-      </Link>
-    </div>
-  )
+    <>
+      <div className="flex-none">
+            <Link
+              className={
+                'sm:text-lg py-4 px-20 rounded-3xl xs:rounded-xl text-white font-medium bg-[#0095D4] hover:bg-blue-600 dark:hover:bg-blue-600 dark:bg-[#0095D4]'
+              }
+              href={"/page"}
+            >
+              Click Here to Enter
+            </Link>
+          </div>
+    </>
+  );
 }
