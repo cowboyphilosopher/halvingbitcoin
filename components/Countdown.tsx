@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import useSWR from 'swr';
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const Countdown = () => {
   const { data, error } = useSWR('https://blockchain.info/q/getblockcount', fetcher);
