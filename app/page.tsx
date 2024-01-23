@@ -19,7 +19,7 @@ export default function Home() {
         <div className="text-center h-1/10">
           <p>i love bitcoin</p>
         </div>
-        <div className="flex h-3/10 w-full justify-around items-center">
+        <div className="flex h-3/10 w-1/2 justify-around items-center">
           <div className="flex-1">
             <Link href="/xyz" className="rounded-lg py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white text-center block">
               1
