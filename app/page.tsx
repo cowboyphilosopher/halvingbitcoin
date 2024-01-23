@@ -14,15 +14,30 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex-none">
-          <Link
-              className={
-                'sm:text-lg py-4 px-20 rounded-3xl xs:rounded-xl text-white font-medium bg-[#0095D4] hover:bg-orange-600 dark:hover:bg-blue-600 dark:bg-[#FF00FF]'
-              }
-              href={"/xyz"}
-            >
-              Click Here to Enter
-          </Link>
+      <div className="flex flex-col h-screen justify-center items-center">
+        <div className="text-center h-1/10">
+          <p>i love bitcoin</p>
+        </div>
+        <div className="flex h-3/10 w-full justify-around items-center">
+          <div className="flex-1">
+            <Link href="/xyz" className="rounded-lg py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white text-center block">
+              1
+            </Link>
+          </div>
+          <div className="flex-1">
+            <Link href="/xyz" className="rounded-lg py-2 px-4 bg-green-500 hover:bg-green-700 text-white text-center block">
+              2
+            </Link>
+          </div>
+          <div className="flex-1">
+            <Link href="/xyz" className="rounded-lg py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-center block">
+              3
+            </Link>
+          </div>
+        </div>
+        <div className="h-2/10 w-full flex justify-center items-center">
+          <img src="path-to-your-image.jpg" alt="Description" />
+        </div>
       </div>
     </>
   );
