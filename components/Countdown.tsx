@@ -10,7 +10,7 @@ const Countdown = () => {
   const [blocksRemaining, setBlocksRemaining] = useState('Loading...');
 
   useEffect(() => {
-    if (data) {
+    if (typeof data === 'number') {
       const remaining = 840000 - data;
       setBlocksRemaining(remaining);
     }
