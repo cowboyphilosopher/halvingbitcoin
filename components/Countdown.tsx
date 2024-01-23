@@ -15,10 +15,10 @@ const Countdown = () => {
 
   return (
     <div className="flex flex-col h-full">
-      <div className="flex justify-center items-center bg-gray-200 text-xl font-semibold h-1/6">
+      <div className="flex justify-center items-center bg-gray-200 text-xl font-semibold h-1/6 rounded-t-lg">
         Countdown
       </div>
-      <div className="flex flex-1 justify-center items-center bg-gray-300">
+      <div className="flex flex-1 justify-center items-center bg-gray-300 rounded-b-lg">
         <span className={`text-green-500 bg-black px-2 py-1 ${error ? 'text-red-500' : ''}`}>
           {error ? 'Error fetching data' : blockHeight}
         </span>
