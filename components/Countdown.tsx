@@ -7,10 +7,14 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const Countdown = () => {
   const { data, error } = useSWR('https://blockchain.info/q/getblockcount', fetcher);
-  const blockHeight = data || 'Loading...';
+  const [blocksRemaining, setBlocksRemaining] = useState('Loading...');
 
   useEffect(() => {
-    // You can add any additional effects if needed when blockHeight changes
+    if (data) {
+      const remaining = 840000 - data;
+      setBlocksRemaining(remaining);
+    }
+  }, [data]);
     
   }, [blockHeight]);
 
@@ -21,7 +25,7 @@ const Countdown = () => {
       </div>
       <div className="flex flex-1 justify-center items-center bg-orange-500 rounded-b-lg">
         <span className={`text-white bg-alpha px-2 py-1 ${error ? 'text-red-500' : ''}`}>
-          {error ? 'Error fetching data' : blockHeight}
+          {error ? 'Error fetching data' : blocksRemaining}
         </span>
         <span className="text-white ml-2"> Blocks until the 1st event.</span>
       </div>
