@@ -17,14 +17,14 @@ const IntroPage = () => {
           </div>
         </div>
         <div className="h-1/2 w-full flex justify-center items-center">
-          <div className="relative w-1/3">
-            <NextImage
+        <div className="relative h-1/2 w-1/2">
+          <NextImage
                 src={'/images/notreal.jpeg'}
                 alt={'not a real bitcoiner'}
-                layout="responsive"
-                width={500} // Set the desired width
-                height={250} // Adjusted height to better fit the scale
+                width={500}
+                height={300}
                 objectFit="contain"
+                layout="responsive"
               />
           </div>
         </div>
