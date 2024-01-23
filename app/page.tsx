@@ -5,7 +5,6 @@ import { Button } from "components/Button/Button";
 import siteMetadata from 'data/siteMetadata';
 import dynamic from 'next/dynamic';
 import NextImage from 'next/image';
-const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 export default function Home() {
   const root =
@@ -23,31 +22,11 @@ export default function Home() {
 
         <div className="text-center h-2/10">
           <Link
-            className="flex justify-center items-center py-2 px-4 text-lg font-medium text-white bg-orange-500 rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+            className="flex justify-center items-center py-2 px-4 text-lg font-medium text-white bg-orange-500 border-black rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
             href={"/xyz"}
           >
             We should party
           </Link>
-        </div>
-
-        <div className="flex h-3/10 w-1/2 justify-around items-center">
-
-          <div className="flex-1">
-            <Countdown />
-          </div>
-
-        </div>
-        <div className="h-5/10 w-full flex justify-center items-center">
-          <div className="relative h-full w-full max-w-xs">
-            <NextImage
-                src={'/images/notreal.jpeg'}
-                alt={'not a real bitcoiner'}
-                layout="responsive"
-                width={500} // Set the desired width
-                height={300} // Set the desired height
-                objectFit="contain"
-              />
-          </div>
         </div>
       </div>
     </>
