@@ -18,22 +18,26 @@ export default function Home() {
     <>
       <div className="flex flex-col h-screen justify-center items-center">
         <div className="text-center h-1/10">
-          <p>i love bitcoin</p>
+          <p>Do you ha(l)ve Bitcoin?</p>
         </div>
+
+        <div className="text-center h-2/10">
+          <Link
+            className={
+              'sm:text-lg py-4 px-20 rounded-3xl xs:rounded-xl text-white font-medium bg-orange hover:bg-blue-600 dark:hover:bg-blue-600 dark:bg-[#0095D4]'
+            }
+            href={"/xyz"}
+          >
+            We should party
+          </Link>
+        </div>
+
         <div className="flex h-3/10 w-1/2 justify-around items-center">
-          <div className="flex-1">
-            <Link href="/xyz" className="rounded-lg py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white text-center block">
-              1
-            </Link>
-          </div>
+
           <div className="flex-1">
             <Countdown />
           </div>
-          <div className="flex-1">
-            <Link href="/xyz" className="rounded-lg py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-center block">
-              3
-            </Link>
-          </div>
+
         </div>
         <div className="h-5/10 w-full flex justify-center items-center">
           <div className="relative h-full w-full max-w-xs">
