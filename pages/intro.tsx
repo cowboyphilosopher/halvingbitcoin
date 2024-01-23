@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Button } from "components/Button/Button";
 import siteMetadata from 'data/siteMetadata';
 import dynamic from 'next/dynamic';
-import NextImage from 'next/image';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 const IntroPage = () => {
@@ -17,15 +16,12 @@ const IntroPage = () => {
           </div>
         </div>
         <div className="h-1/2 w-full flex justify-center items-center">
-        <div className="relative h-1/2 w-1/2">
-          <NextImage
-                src={'/images/notreal.jpeg'}
-                alt={'not a real bitcoiner'}
-                width={500}
-                height={300}
-                objectFit="contain"
-                layout="responsive"
-              />
+        <div className="h-1/2 w-1/2 flex justify-center items-center">
+          <img
+                src="/images/notreal.jpeg"
+                alt="not a real bitcoiner"
+                style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+          />
           </div>
         </div>
       </div>
