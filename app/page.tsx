@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="h-2/10 w-full flex justify-center items-center">
-          <img src="/public/images/notreal.jpg" alt="not a real bitcoiner" />
+          <img src="/images/notreal.jpg" alt="not a real bitcoiner" />
         </div>
       </div>
     </>
