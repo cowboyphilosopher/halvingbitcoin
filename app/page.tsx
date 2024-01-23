@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="h-2/10 w-full flex justify-center items-center">
-          <img src="path-to-your-image.jpg" alt="Description" />
+          <img src="/images/your-image.jpg" alt="Description" />
         </div>
       </div>
     </>
