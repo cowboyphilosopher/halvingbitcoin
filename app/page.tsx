@@ -23,9 +23,7 @@ export default function Home() {
 
         <div className="text-center h-2/10">
           <Link
-            className={
-              'sm:text-lg py-4 px-20 rounded-3xl xs:rounded-xl text-white font-medium bg-orange hover:bg-blue-600 dark:hover:bg-blue-600 dark:bg-[#0095D4]'
-            }
+            className="flex justify-center items-center py-2 px-4 text-lg font-medium text-white bg-orange-500 rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
             href={"/xyz"}
           >
             We should party
