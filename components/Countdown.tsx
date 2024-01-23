@@ -12,7 +12,6 @@ const Countdown = () => {
   useEffect(() => {
     // You can add any additional effects if needed when blockHeight changes
   }, [blockHeight]);
-  }, []);
 
   return (
     <div className="flex flex-col h-full">
