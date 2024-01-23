@@ -9,13 +9,13 @@ const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 const XyzPage = () => {
   return (
     <>
-      <div className="flex flex-col h-screen justify-center items-center">
-        <div className="flex h-3/10 w-1/2 justify-around items-center">
+      <div className="flex flex-col h-screen justify-center items-center gap-4">
+        <div className="flex h-1/2 w-full justify-center items-center">
           <div className="relative h-full w-full">
             <Countdown />
           </div>
         </div>
-        <div className="h-5/10 w-full flex justify-center items-center">
+        <div className="h-1/2 w-full flex justify-center items-center">
           <div className="relative h-full w-full">
             <NextImage
                 src={'/images/notreal.jpeg'}
