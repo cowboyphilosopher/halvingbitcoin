@@ -37,13 +37,15 @@ export default function Home() {
           </div>
         </div>
         <div className="h-5/10 w-full flex justify-center items-center">
-          <div className="relative h-full w-full">
-          <NextImage
-              src={'/images/notreal.jpeg'}
-              alt={'not a real bitcoiner'}
-              layout="fill"
-              objectFit="contain"
-            />
+          <div className="relative h-full w-full max-w-xs">
+            <NextImage
+                src={'/images/notreal.jpeg'}
+                alt={'not a real bitcoiner'}
+                layout="responsive"
+                width={500} // Set the desired width
+                height={300} // Set the desired height
+                objectFit="contain"
+              />
           </div>
         </div>
       </div>
