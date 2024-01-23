@@ -15,8 +15,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col h-screen justify-center items-center">
-        <div className="text-center text-black h-1/10">
+      <div className="flex flex-col h-screen justify-center items-center bg-orange-500 text-white">
+        <div className="text-center h-1/10">
           <p>Do you ha(l)ve Bitcoin?</p>
         </div>
 
