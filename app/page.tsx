@@ -36,13 +36,15 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="h-2/10 w-full flex justify-center items-center">
-        <NextImage
-            src={'/images/notreal.jpeg'}
-            alt={'not a real bitcoiner'}
-            layout="fill"
-            objectFit="contain"
-          />
+        <div className="h-5/10 w-full flex justify-center items-center">
+          <div className="relative h-full w-full">
+          <NextImage
+              src={'/images/notreal.jpeg'}
+              alt={'not a real bitcoiner'}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
         </div>
       </div>
     </>
