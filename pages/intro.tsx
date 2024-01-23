@@ -1,7 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
-import { Button } from "components/Button/Button";
-import siteMetadata from 'data/siteMetadata';
 import dynamic from 'next/dynamic';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
