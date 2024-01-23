@@ -15,14 +15,14 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col h-screen justify-center items-center bg-orange-500 text-black">
-        <div className="text-center text-white h-1/10">
+      <div className="flex flex-col h-screen justify-center items-center">
+        <div className="text-center text-black h-1/10">
           <p>Do you ha(l)ve Bitcoin?</p>
         </div>
 
         <div className="text-center h-2/10">
           <Link
-            className="flex justify-center items-center py-2 px-4 text-lg font-medium text-black bg-orange-500 border border-white rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+            className="flex justify-center items-center py-2 px-4 text-lg font-medium"
             href={"/xyz"}
           >
             We should party
