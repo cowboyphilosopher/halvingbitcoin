@@ -5,7 +5,7 @@ import { Button } from "components/Button/Button";
 import siteMetadata from 'data/siteMetadata';
 import dynamic from 'next/dynamic';
 import NextImage from 'next/image';
-import Countdown from 'components/Countdown';
+const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 export default function Home() {
   const root =
@@ -26,7 +26,9 @@ export default function Home() {
               1
             </Link>
           </div>
-          <Countdown />
+          <div className="flex-1">
+            <Countdown />
+          </div>
           <div className="flex-1">
             <Link href="/xyz" className="rounded-lg py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-center block">
               3
