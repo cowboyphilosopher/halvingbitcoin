@@ -15,12 +15,7 @@ export default function Home() {
   return (
     <>
       <div className="flex-none">
-            <Link
-              className={
-                'sm:text-lg py-4 px-20 rounded-3xl xs:rounded-xl text-white font-medium bg-[#0095D4] hover:bg-blue-600 dark:hover:bg-blue-600 dark:bg-[#0095D4]'
-              }
-              href={"/page"}
-            >
+            <Link href="/xyz">
               Click Here to Enter
             </Link>
           </div>
