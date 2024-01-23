@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from "components/Button/Button";
 import siteMetadata from 'data/siteMetadata';
 import dynamic from 'next/dynamic';
+import NextImage from 'next/image';
 
 export default function Home() {
   const root =
@@ -36,7 +37,12 @@ export default function Home() {
           </div>
         </div>
         <div className="h-2/10 w-full flex justify-center items-center">
-          <img src="/images/notreal.jpg" alt="not a real bitcoiner" />
+        <NextImage
+            src={'/images/notreal.jpeg'}
+            alt={'not a real bitcoiner'}
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
       </div>
     </>
