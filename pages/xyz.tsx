@@ -17,13 +17,13 @@ const XyzPage = () => {
           </div>
         </div>
         <div className="h-1/4 w-full flex justify-center items-center">
-          <div className="relative h-1/2 w-1/2">
+          <div className="relative w-1/2">
             <NextImage
                 src={'/images/notreal.jpeg'}
                 alt={'not a real bitcoiner'}
                 layout="responsive"
                 width={500} // Set the desired width
-                height={300} // Set the desired height
+                height={250} // Adjusted height to better fit the scale
                 objectFit="contain"
               />
           </div>
