@@ -9,7 +9,7 @@ const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 const XyzPage = () => {
   return (
     <>
-    <div className="h-full w-full bg-orange-500">
+    <div className="min-h-screen w-full bg-orange-500">
       <div className="flex flex-col justify-center items-center bg-orange-500">
         <div className="flex h-1/5 w-1/2 justify-center items-center bg-gray-200 rounded-lg shadow">
           <div className="relative h-full w-full">
