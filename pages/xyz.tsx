@@ -9,15 +9,15 @@ const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 const XyzPage = () => {
   return (
     <>
-      <div className="flex flex-col h-screen justify-center items-center gap-4 bg-gray-100">
-        <div className="flex h-1/2 w-full justify-center items-center bg-gray-200 rounded-lg shadow">
-        <div className="h-1/2 w-full flex justify-center items-center bg-gray-300 rounded-lg shadow">
+    <div className="h-full w-full">
+      <div className="flex flex-col justify-center items-center bg-orange-500">
+        <div className="flex h-1/5 w-1/2 justify-center items-center bg-gray-200 rounded-lg shadow">
           <div className="relative h-full w-full">
             <Countdown />
           </div>
         </div>
-        <div className="h-1/2 w-full flex justify-center items-center">
-          <div className="relative h-full w-full">
+        <div className="h-1/4 w-full flex justify-center items-center">
+          <div className="relative h-1/2 w-1/2">
             <NextImage
                 src={'/images/notreal.jpeg'}
                 alt={'not a real bitcoiner'}
@@ -29,6 +29,7 @@ const XyzPage = () => {
           </div>
         </div>
       </div>
+    </div>
     </>
   )
 }
