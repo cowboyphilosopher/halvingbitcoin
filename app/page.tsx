@@ -26,11 +26,7 @@ export default function Home() {
               1
             </Link>
           </div>
-          <div className="flex-1">
-            <Link href="/xyz" className="rounded-lg py-2 px-4 bg-green-500 hover:bg-green-700 text-white text-center block">
-              2
-            </Link>
-          </div>
+          <Countdown />
           <div className="flex-1">
             <Link href="/xyz" className="rounded-lg py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-center block">
               3
