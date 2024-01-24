@@ -15,11 +15,9 @@ const IntroPage = () => {
         </div>
         <div className="h-1/2 w-full flex justify-center items-center">
         <div className="relative w-1/2 h-1/2">
-          <Image
+          <img
                 src="/images/notreal.jpeg"
                 alt="not a real bitcoiner"
-                fill={true}
-                objectFit="contain"
           />
           </div>
         </div>
