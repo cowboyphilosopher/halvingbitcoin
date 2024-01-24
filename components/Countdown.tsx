@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import useSWR from 'swr';
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
+const fetcher = (url: string) => fetch(url).then((res) => res.json() as Promise<BlockCypherResponse>);
 interface BlockCypherResponse {
   height: number;
   // Add other properties from the API response if necessary
