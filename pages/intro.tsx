@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import dynamic from 'next/dynamic';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
@@ -13,11 +14,12 @@ const IntroPage = () => {
           </div>
         </div>
         <div className="h-1/2 w-full flex justify-center items-center">
-        <div className="flex justify-center items-center" style={{ width: '50vw', height: '50vh' }}>
-          <img
+        <div className="relative w-1/2 h-1/2">
+          <Image
                 src="/images/notreal.jpeg"
                 alt="not a real bitcoiner"
-                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                layout="fill"
+                objectFit="contain"
           />
           </div>
         </div>
