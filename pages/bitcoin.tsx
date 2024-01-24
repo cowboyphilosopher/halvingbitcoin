@@ -10,9 +10,8 @@ export default function BitcoinPage() {
           Do you ha(l)ve Bitcoin?
         </div>
         <div>
-          <Link
+          <Link href="/intro" passHref
               className="border rounded px-4 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700"
-              href={"/intro"}
             >
             We should party
             </Link>
