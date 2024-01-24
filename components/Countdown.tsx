@@ -4,9 +4,13 @@ import React, { useEffect, useState } from 'react';
 import useSWR from 'swr';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
+interface BlockCypherResponse {
+  height: number;
+  // Add other properties from the API response if necessary
+}
 
 export default function Countdown() {
-  const { data, error } = useSWR('https://api.blockcypher.com/v1/btc/main', fetcher);
+  const { data, error } = useSWR<BlockCypherResponse>('https://api.blockcypher.com/v1/btc/main', fetcher);
   const [blocksRemaining, setBlocksRemaining] = useState('Loading...');
 
   useEffect(() => {
