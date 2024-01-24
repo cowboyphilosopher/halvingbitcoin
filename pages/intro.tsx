@@ -8,13 +8,13 @@ const IntroPage = () => {
     <>
     <div className="min-h-screen w-full bg-orange-500">
       <div className="flex flex-col justify-center items-center bg-orange-500">
-        <div className="flex h-1/2 w-1/2 justify-center items-center bg-gray-200 rounded-lg shadow">
+        <div className="flex h-1/2 w-full justify-center items-center bg-gray-200 rounded-lg shadow">
           <div className="relative h-full w-full">
             <Countdown />
           </div>
         </div>
         <div className="h-1/2 w-full flex justify-center items-center">
-        <div className="relative w-full h-1/2 md:w-1/2">
+        <div className="relative w-full h-1/2 md:w-2/3">
           <img
                 src="/images/notreal.jpeg"
                 alt="not a real bitcoiner"
