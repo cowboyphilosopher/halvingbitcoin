@@ -8,11 +8,11 @@ import dynamic from 'next/dynamic';
 import NextImage from 'next/image';
 
 export default function Home() {
-  // const root =
-  //   typeof window === 'undefined'
-  //     ? { classList: { toggle: () => null }, getElementsByClassName: () => null }
-  //     : window.document.documentElement;
-  // root.classList.toggle('dark'); // toggle to dark initially
+  const root =
+    typeof window === 'undefined'
+      ? { classList: { toggle: () => null }, getElementsByClassName: () => null }
+      : window.document.documentElement;
+  root.classList.toggle('dark'); // toggle to dark initially
 
   return (
     <>
