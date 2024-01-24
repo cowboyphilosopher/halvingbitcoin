@@ -5,7 +5,7 @@ import useSWR from 'swr';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-const Countdown = () => {
+export default function Countdown() {
   const { data, error } = useSWR('https://blockchain.info/q/getblockcount', fetcher);
   const [blocksRemaining, setBlocksRemaining] = useState('Loading...');
 
@@ -31,4 +31,3 @@ const Countdown = () => {
   );
 };
 
-export default Countdown;

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
-const IntroPage = () => {
+export default function IntroPage() {
   return (
     <>
     <div className="min-h-screen w-full bg-orange-500">
@@ -24,9 +24,7 @@ const IntroPage = () => {
       </div>
     </div>
     </>
-  )
+  );
 }
-
-export default IntroPage
 
 

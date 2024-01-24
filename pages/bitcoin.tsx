@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
-const BitcoinPage = () => {
+export default function BitcoinPage() {
   return (
     <>
       <div className="flex flex-col h-screen justify-center items-center gap-2 bg-orange-500 text-center">
@@ -19,9 +19,7 @@ const BitcoinPage = () => {
         </div>
       </div>
     </>
-  )
+  );
 }
-
-export default BitcoinPage
 
 
