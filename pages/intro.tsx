@@ -14,7 +14,7 @@ const IntroPage = () => {
           </div>
         </div>
         <div className="h-1/2 w-full flex justify-center items-center">
-          <div className="relative w-full h-1/2 md:w-2/3 justify-center items-center">
+          <div className="relative w-full h-1/2 md:w-2/3 flex justify-center items-center">
             <img
                   src="/images/notreal.jpeg"
                   alt="not a real bitcoiner"
