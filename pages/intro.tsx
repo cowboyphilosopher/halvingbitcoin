@@ -18,7 +18,7 @@ const IntroPage = () => {
           <Image
                 src="/images/notreal.jpeg"
                 alt="not a real bitcoiner"
-                fill
+                fill={true}
                 objectFit="contain"
           />
           </div>
