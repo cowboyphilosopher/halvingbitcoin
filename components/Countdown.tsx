@@ -6,12 +6,12 @@ import useSWR from 'swr';
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function Countdown() {
-  const { data, error } = useSWR('https://blockchain.info/q/getblockcount', fetcher);
+  const { data, error } = useSWR('https://api.blockcypher.com/v1/btc/main', fetcher);
   const [blocksRemaining, setBlocksRemaining] = useState('Loading...');
 
   useEffect(() => {
-    if (typeof data === 'number') {
-      const remaining = 840000 - data;
+    if (data && typeof data.height === 'number') {
+      const remaining = 840000 - data.height;
       setBlocksRemaining(remaining.toString());
     }
   }, [data]);
