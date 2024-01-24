@@ -13,11 +13,11 @@ const IntroPage = () => {
           </div>
         </div>
         <div className="h-1/2 w-full flex justify-center items-center">
-        <div className="h-1/2 w-1/2 flex justify-center items-center">
+        <div className="flex justify-center items-center" style={{ width: '50vw', height: '50vh' }}>
           <img
                 src="/images/notreal.jpeg"
                 alt="not a real bitcoiner"
-                style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
           />
           </div>
         </div>
