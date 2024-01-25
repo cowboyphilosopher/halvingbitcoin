@@ -1,11 +1,11 @@
 /* use client */
-import React from 'react';
 import Link from 'next/link';
 import BitcoinPage from 'pages/bitcoin';
 import { Button } from "components/Button/Button";
 import siteMetadata from 'data/siteMetadata';
 import dynamic from 'next/dynamic';
 import NextImage from 'next/image';
+import React from 'react';
 
 export default function Home() {
   const root =

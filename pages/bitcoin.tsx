@@ -1,6 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
+import React from 'react';
 
 export default function BitcoinPage() {
   return (
@@ -10,7 +9,7 @@ export default function BitcoinPage() {
           Do you ha(l)ve Bitcoin?
         </div>
         <div>
-          <Link href="/intro" passHref
+          <Link href="/intro"
               className="border rounded px-4 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700"
             >
             We should party
