@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Button } from "components/Button/Button"
 import React from 'react';
 
 export default function BitcoinPage() {
@@ -9,11 +10,14 @@ export default function BitcoinPage() {
           Do you ha(l)ve Bitcoin?
         </div>
         <div>
-          <Link href="/intro"
+          {/* <Link href="/intro"
               className="border rounded px-4 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700"
             >
             We should party
-            </Link>
+            </Link> */}
+          <Button href="/intro" className="border rounded px-4 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700">
+            We should party
+          </Button>
         </div>
       </div>
     </>
