@@ -1,6 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
+import Accordion from './faq';
+import FAQPage from './faq';
+import NavigationBar from 'components/Navigation';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 export default function IntroPage() {
@@ -8,6 +11,9 @@ export default function IntroPage() {
     <>
     <div className="min-h-screen w-full bg-orange-500">
       <div className="flex flex-col justify-center items-center bg-orange-500">
+        <div className="relative h-1/10 w-full">
+            <NavigationBar />
+        </div>
         <div className="flex h-1/2 w-full justify-center items-center">
           <div className="relative h-full w-full">
             <Countdown />
