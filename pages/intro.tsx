@@ -1,8 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
 import dynamic from 'next/dynamic';
-import Accordion from './faq';
-import FAQPage from './faq';
+import React from 'react';
 import NavigationBar from 'components/Navigation';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
