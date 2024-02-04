@@ -10,7 +10,7 @@ export default function IntroPage() {
         <div className="relative h-1/10 w-screen">
             <NavigationBar />
         </div>
-        <div className="flex h-1/3 w-full justify-center items-center">
+        <div className="flex h-1/3 w-full md:w-1/2 justify-center items-center p-4">
           <PartyDoc />
         </div>
         <div className="h-1/3 w-full flex justify-center items-center">
