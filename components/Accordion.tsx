@@ -25,7 +25,7 @@ export default function Accordion({
   };
 
   return (
-    <div className="max-w-md mx-auto w-full">
+    <div className="mx-auto w-full">
       {faqData.map((faq, index: number) => (
         <div key={index} className="mb-4 w-full">
           <button

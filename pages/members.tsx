@@ -4,22 +4,35 @@ import NavigationBar from 'components/Navigation';
 
 export default function MembersPage() {
   return (
-      <>
-        <div className="min-h-screen w-full bg-orange-500">
-          <div className="flex flex-col justify-center items-center bg-orange-500">
-            <div className="relative h-1/10 w-full">
-                <NavigationBar />
+    <div className="min-h-screen bg-orange-500">
+      <div className="flex flex-col justify-center items-center bg-orange-500 px-4">
+        <div className="relative h-1/10 w-screen">
+          <NavigationBar />
+        </div>
+        <div className="relative h-1/4 w-full flex justify-center items-center text-white max-w-3xl px-4">
+          <div>
+            <div className="text-center">
+              Enter the public address that was given to you with your party invite.
             </div>
-            <div className="relative h-1/4 w-full flex justify-center items-center text-white">
-             <p>Enter the public address that was given to you with your party invite.</p>
-             <p>If you have paid you should see your invite status below.</p> 
-            </div>
-            <div className="relative h-1/2 w-full flex justify-center items-center">
-                <MemberMap />
+            <div className="text-center">
+              If you have paid you should see your invite status below.
             </div>
           </div>
         </div>
-      </>
-    );
+        <div className="relative h-1/2 w-full flex justify-center items-center px-4">
+          <MemberMap />
+        </div>
+        <div className="relative h-1/4 w-full flex justify-center items-center text-white max-w-3xl px-4">
+          <div>
+            <div className="text-center">
+              Any questions or concerns please send an email to:
+            </div>
+            <div className="text-center">
+              btcwiseops@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
-

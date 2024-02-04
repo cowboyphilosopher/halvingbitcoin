@@ -90,7 +90,7 @@ export default function MemberMap() {
         </div>
       </form>
       {result && (
-        <div>
+        <div className="text-white bg-orange-700">
           <p>{`Name: ${result.name}`}</p>
           <p>{`Sats paid: ${result.value}`}</p>
           <p>{`Party Invite Status: ${result.rank}`}</p>

@@ -22,11 +22,11 @@ export default function FAQPage() {
 
     <>
     <div className="min-h-screen w-full bg-orange-500">
-      <div className="flex flex-col justify-center items-center bg-orange-500">
-        <div className="relative h-1/10 w-full">
+      <div className="flex flex-col w-screen justify-center items-center bg-orange-500">
+        <div className="relative h-1/10 w-screen">
             <NavigationBar />
         </div>
-        <div className="flex flex-col justify-center items-center gap-2 bg-orange-500 text-center mx-auto py-8">
+        <div className="flex flex-col md:w-1/2 justify-center items-center gap-2 bg-orange-500 text-center mx-auto py-8">
             <h1 className="text-3xl font-semibold text-white">Frequently Asked Questions</h1>
             <Accordion faqData={faqData} />
         </div>

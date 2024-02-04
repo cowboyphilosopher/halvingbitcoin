@@ -22,10 +22,10 @@ export default function Countdown() {
     
   return (
     <div className="flex flex-col h-full min-h-[100px]">
-      <div className="flex justify-center items-center bg-orange-500 text-xl text-white font-bold h-1/3 rounded-t-lg">
+      <div className="flex justify-center items-center bg-orange-500 text-xl text-white font-bold h-1/2 rounded-t-lg">
         Blocks Remaining
       </div>
-      <div className="flex flex-1 h-2/3 w-full justify-center items-center bg-orange-500 rounded-b-lg">
+      <div className="flex h-1/2 w-full justify-center items-center bg-orange-500 rounded-b-lg">
         <span className={`text-white bg-alpha ${error ? 'text-red-500' : ''}`}>
           {error ? 'Error fetching data' : blocksRemaining}
         </span>

@@ -1,21 +1,14 @@
-import dynamic from 'next/dynamic';
 import React from 'react';
 import NavigationBar from 'components/Navigation';
 import PartyDoc from 'components/PartyDoc';
-const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 export default function IntroPage() {
   return (
     <>
     <div className="min-h-screen w-full bg-orange-500">
       <div className="flex flex-col justify-center items-center bg-orange-500">
-        <div className="relative h-1/10 w-full">
+        <div className="relative h-1/10 w-screen">
             <NavigationBar />
-        </div>
-        <div className="flex h-1/4 w-full justify-center items-center">
-          <div className="relative h-full w-full">
-            <Countdown />
-          </div>
         </div>
         <div className="flex h-1/3 w-full justify-center items-center">
           <PartyDoc />
