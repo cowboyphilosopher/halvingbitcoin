@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import React from 'react';
 import NavigationBar from 'components/Navigation';
+import PartyDoc from 'components/PartyDoc';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 export default function IntroPage() {
@@ -16,14 +17,17 @@ export default function IntroPage() {
             <Countdown />
           </div>
         </div>
-        <div className="h-1/2 w-full flex justify-center items-center">
+        <div className="flex h-1/2 w-full justify-center items-center">
+          <PartyDoc />
+        </div>
+        {/* <div className="h-1/2 w-full flex justify-center items-center">
           <div className="relative w-full h-1/2 md:w-2/3 flex justify-center items-center">
             <img
                   src="/images/notreal.jpeg"
                   alt="not a real bitcoiner"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
     </>
