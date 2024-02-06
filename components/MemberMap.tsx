@@ -71,20 +71,20 @@ export default function MemberMap() {
   };
 
   return (
-    <div className="px-4 py-2">
+    <div className="flex h-full w-full flex-col justify-center items-center px-4 py-2">
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-row gap-4"> {/* Add a flex container to space the buttons */}
+        <div className="flex flex-row gap-2">
           <input
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Enter a key"
-            className="px-4 py-2 border-white text-base font-medium"
+            className="py-2 border-white text-base font-medium"
           />
-          <Button href="#" type="button" onClick={handleButtonClick} className="border rounded px-4 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700">
+          <Button href="#" type="button" onClick={handleButtonClick} className="border rounded px-2 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700">
             Submit
           </Button>
-          <Button href="#" onClick={() => setResult(null)} className="border rounded px-4 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700">
+          <Button href="#" onClick={() => setResult(null)} className="border rounded px-2 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700">
             Reset
           </Button>
         </div>

@@ -19,6 +19,16 @@ export default function EventsPage() {
               <Countdown />
             </div>
           </div>
+          <div className="relative h-1/10 w-full flex flex-wrap justify-center items-center text-white">
+            <div>
+              <div className="text-center">
+                Total Party Funds: 115,515,465 sats
+              </div>
+              <div className="text-center">
+                Current Budget Per Event: 23,103,093 sats
+              </div>
+            </div>
+          </div>
           <div className="relative h-1/3 w-full flex justify-center items-center text-white px-4">
             <div>
               <div className="text-center">
@@ -38,10 +48,10 @@ export default function EventsPage() {
               </div>
             </div>
           </div>
-          <div>
+          {/* <div>
             <h1>Bitcoin Wallet Balance</h1>
             <WalletBalance zpubKey={"Zpub75bvHhALtQr49PzycX6sdDVxuNffRSV3N1Z6LX5qzx9ptKtefL7HJVZ3q8vFqYQ9sXJPGFtFdtPFeZsRzJQaowNMVPxQFgaRKK9QSzoMvDQ"} />
-          </div>
+          </div> */}
           <div className="h-1/3 w-full flex justify-center items-center">
             <div className="relative w-full h-1/2 md:w-2/3 flex justify-center items-center">
               <img
@@ -55,6 +65,4 @@ export default function EventsPage() {
     </>
   );
 }
-
-
 

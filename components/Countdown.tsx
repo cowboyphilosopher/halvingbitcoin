@@ -21,7 +21,7 @@ export default function Countdown() {
   }, [data]);
     
   return (
-    <div className="flex flex-col h-full min-h-[100px]">
+    <div className="flex flex-col h-full">
       <div className="flex justify-center items-center bg-orange-500 text-xl text-white font-bold h-1/2 rounded-t-lg">
         Blocks Remaining
       </div>
