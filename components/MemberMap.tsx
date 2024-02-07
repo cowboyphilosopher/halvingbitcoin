@@ -81,16 +81,16 @@ export default function MemberMap() {
             placeholder="Enter a key"
             className="py-2 border-white text-base font-medium"
           />
-          <Button href="#" type="button" onClick={handleButtonClick} className="border rounded px-2 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700">
+          <Button href="#" type="button" onClick={handleButtonClick} className="border rounded px-2 py-2 border-white text-base font-medium text-white bg-[#f7931a] hover:bg-[#c05000]">
             Submit
           </Button>
-          <Button href="#" onClick={() => setResult(null)} className="border rounded px-2 py-2 border-white text-base font-medium text-white bg-orange-500 hover:bg-orange-700">
+          <Button href="#" onClick={() => setResult(null)} className="border rounded px-2 py-2 border-white text-base font-medium text-white bg-[#f7931a] hover:bg-[#c05000]">
             Reset
           </Button>
         </div>
       </form>
       {result && (
-        <div className="text-white bg-orange-700">
+        <div className="text-white bg-[#c05000] mt-2">
           <p>{`Name: ${result.name}`}</p>
           <p>{`Sats paid: ${result.value}`}</p>
           <p>{`Party Invite Status: ${result.rank}`}</p>

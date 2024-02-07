@@ -5,8 +5,8 @@ import PartyDoc from 'components/PartyDoc';
 export default function IntroPage() {
   return (
     <>
-    <div className="min-h-screen w-full bg-orange-500">
-      <div className="flex flex-col justify-center items-center bg-orange-500">
+    <div className="min-h-screen w-full bg-[#f7931a]">
+      <div className="flex flex-col justify-center items-center bg-[#f7931a]">
         <div className="relative h-1/10 w-screen">
             <NavigationBar />
         </div>

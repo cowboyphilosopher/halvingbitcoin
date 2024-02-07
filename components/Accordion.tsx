@@ -14,8 +14,8 @@ interface AccordionProps {
 
 export default function Accordion({
   faqData,
-  buttonColor = 'bg-orange-500 border-2 rounded hover:border-white hover:border-2',
-  activeButtonColor = 'border rounded border-white border-2 bg-orange-500',
+  buttonColor = 'bg-[#f7931a] border-2 rounded hover:border-white hover:border-2',
+  activeButtonColor = 'border rounded border-white border-2 bg-[#f7931a]',
   textColor = 'text-white',
 }: AccordionProps) {
   const [activeTab, setActiveTab] = useState<number | null>(null);
@@ -50,7 +50,7 @@ export default function Accordion({
             </svg>
           </button>
           {activeTab === index && (
-            <div className="mt-2 bg-orange-700 rounded border-white border-1 shadow-md p-4">
+            <div className="mt-2 bg-[#c05000] rounded border-white border-1 shadow-md p-4">
               <p className="text-white">{faq.answer}</p>
             </div>
           )}

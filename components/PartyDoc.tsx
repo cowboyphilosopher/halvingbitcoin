@@ -3,7 +3,7 @@ import React from 'react';
 export default function PartyDoc() {
   return (
     <>
-      <div className="h-64 w-full overflow-y-scroll text-white bg-orange-700 p-4">
+      <div className="h-64 w-full overflow-y-scroll text-white bg-[#c05000] p-4">
         {/* Content inside the scrollable window */}
         <p className='text-2xl'>Cyclical Bitcoin Halvening Party</p>
         <p>When: Block 840,000, 1,050,000, 1,260,000, 1,470,000, and 1,680,000</p>

@@ -4,8 +4,8 @@ import NavigationBar from 'components/Navigation';
 
 export default function MembersPage() {
   return (
-    <div className="min-h-screen bg-orange-500">
-      <div className="flex flex-col justify-center items-center bg-orange-500 px-4">
+    <div className="min-h-screen bg-[#f7931a]">
+      <div className="flex flex-col justify-center items-center bg-[#f7931a] px-4">
         <div className="relative h-1/10 w-screen">
           <NavigationBar />
         </div>
