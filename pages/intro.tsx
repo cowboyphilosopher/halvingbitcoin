@@ -30,8 +30,8 @@ export default function IntroPage() {
         <div className="h-3/10 w-full flex justify-center items-center">
           <div className="relative w-full h-1/2 md:w-2/3 flex justify-center items-center">
             <img
-                  src="/images/notreal.jpeg"
-                  alt="not a real bitcoiner"
+                  src="/images/party.jpeg"
+                  alt="party time"
             />
           </div>
         </div>
