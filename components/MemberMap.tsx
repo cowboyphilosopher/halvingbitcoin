@@ -35,7 +35,7 @@ const keyValueMap: KeyValueMap = {
   bc1qw5rfzt8e4qpjuge4lz8rh64hkc9cyndtk6y5kj9gea7e4xmvlq0stwhmer: { value: 5000000, name: 'Ryan Freeman', rank: "Member (Real Bitcoiner)" },
 
   bc1q8jsp84nkvnc38pmn8qexqqp3xt86m5qx4ta3w67m77hsagwns0ss6ecrx5: { value: 100000, name: 'Kurt Rein', rank: "Guest (Shitcoiner)" },
-  bc1qv0nh7l9cta5vta87qmhfecvpzhmspnedhwcn5m0wgqpy6tltjajqzw5eew: { value: 100000, name: 'Taylor Edwards', rank: "Guest (Shitcoiner)" },
+  bc1qv0nh7l9cta5vta87qmhfecvpzhmspnedhwcn5m0wgqpy6tltjajqzw5eew: { value: 200000, name: 'Taylor Edwards (+1)', rank: "Guest (Shitcoiner)" },
 
 
   bc1qqmyy903pyfzne754kr4t2fr2pe80je3afl7xep25hrmp5q83r9aqsw7fvq: { value: 0, name: 'Andrew Macaluso', rank: "UNKNOWN" },
