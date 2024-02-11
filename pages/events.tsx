@@ -22,10 +22,10 @@ export default function EventsPage() {
           <div className="relative h-1/10 w-full flex flex-wrap justify-center items-center text-white">
             <div>
               <div className="text-center">
-                Total Party Funds: 115,515,465 sats
+                Total Party Funds: 115,615,465 sats
               </div>
               <div className="text-center">
-                Current Budget Per Event: 23,103,093 sats
+                Current Budget Per Event: 23,123,093 sats
               </div>
             </div>
           </div>
