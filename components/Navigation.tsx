@@ -7,21 +7,21 @@ export default function NavigationBar() {
   const buttonStylesMobile = 'sm:min-w-min';
 
   return (
-    <nav className="bg-[#f7931a] p-4">
-      <div className="flex flex-wrap justify-center max-w-screen-xl mx-auto">
-        <Button href="/" className={`${buttonStyles} ${buttonStylesMobile} mb-2 sm:mb-0`}>
+    <nav className="bg-[#f7931a] p-2">
+      <div className="flex flex-wrap justify-center mx-auto space-x-2">
+        <Button href="/" className={`${buttonStyles} ${buttonStylesMobile} mb-2`}>
           Home
         </Button>
-        <Button href="/intro" className={`${buttonStyles} ${buttonStylesMobile} mb-2 sm:mb-0`}>
+        <Button href="/intro" className={`${buttonStyles} ${buttonStylesMobile} mb-2`}>
           Intro
         </Button>
-        <Button href="/events" className={`${buttonStyles} ${buttonStylesMobile} mb-2 sm:mb-0`}>
+        <Button href="/events" className={`${buttonStyles} ${buttonStylesMobile} mb-2`}>
           Events
         </Button>
-        <Button href="/faq" className={`${buttonStyles} ${buttonStylesMobile} mb-2 sm:mb-0`}>
+        <Button href="/faq" className={`${buttonStyles} ${buttonStylesMobile} mb-2`}>
           FAQ
         </Button>
-        <Button href="/members" className={`${buttonStyles} ${buttonStylesMobile} mb-2 sm:mb-0`}>
+        <Button href="/members" className={`${buttonStyles} ${buttonStylesMobile} md:mb-2`}>
           Members
         </Button>
       </div>
