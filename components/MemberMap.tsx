@@ -43,8 +43,8 @@ const keyValueMap: KeyValueMap = {
   bc1qtzc0rr545hmwn9tmccuqcs2qe9uvcma0rlqvquhl4c8hhp4r0vts8wy3zd: { value: 0, name: 'Jeff Turner', rank: "UNKNOWN" },
   bc1q8ls8sjxzqz55ehux6hxsfze4vz4gml39qrlvr3a9pcvp5l9qjaxsam4vaz: { value: 0, name: 'Bitcoin Magazine', rank: "UNKNOWN" },
   bc1qtjsfjmlw6cwm7y0wuqt8597jl92h57vmee2netq80qjmyvgg3h2qlnd52c: { value: 0, name: 'Samuel', rank: "UNKNOWN" },
-  bc1q9xzt2tu55use60hvhep8c5qv7n972fmcysq24s35s48hrpzle9rqxqr7l0: { value: 0, name: 'Mark Noah', rank: "Member (Real Bitcoiner)" },
-  bc1q7kwscksp0klarzuut6jztfhg44gw6sshmrpy0sw7y3pysv8jck5s7g75j8: { value: 0, name: 'Jeff Walker', rank: "Member (Real Bitcoiner)" },
+  bc1q9xzt2tu55use60hvhep8c5qv7n972fmcysq24s35s48hrpzle9rqxqr7l0: { value: 5000000, name: 'Mark Noah', rank: "Member (Real Bitcoiner)" },
+  bc1q7kwscksp0klarzuut6jztfhg44gw6sshmrpy0sw7y3pysv8jck5s7g75j8: { value: 5000000, name: 'Jeff Walker', rank: "Member (Real Bitcoiner)" },
 
 };
 export default function MemberMap() {
