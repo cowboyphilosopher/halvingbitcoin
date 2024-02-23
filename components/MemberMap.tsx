@@ -45,6 +45,7 @@ const keyValueMap: KeyValueMap = {
   bc1qtjsfjmlw6cwm7y0wuqt8597jl92h57vmee2netq80qjmyvgg3h2qlnd52c: { value: 0, name: 'Samuel', rank: "UNKNOWN" },
   bc1q9xzt2tu55use60hvhep8c5qv7n972fmcysq24s35s48hrpzle9rqxqr7l0: { value: 5000000, name: 'Mark Noah', rank: "Member (Real Bitcoiner)" },
   bc1q7kwscksp0klarzuut6jztfhg44gw6sshmrpy0sw7y3pysv8jck5s7g75j8: { value: 5000000, name: 'Jeff Walker', rank: "Member (Real Bitcoiner)" },
+  bc1ql06mvsg7x0zyqczewdzf60p2wg20p70rqkcvtv2m5xvztzfgnudstxn6zn: { value: 1000000, name: 'Audrey Geiger', rank: "Honorary Member (Bitcoiner)" },
 
 };
 export default function MemberMap() {
