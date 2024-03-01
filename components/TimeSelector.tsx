@@ -17,7 +17,7 @@ export default function TimeSelector() {
     }if (hour === 0 || hour === 24) {
       return `Midnight`
     }
-    return `${formattedHour}:00${meridiem}`;
+    return `${formattedHour}${meridiem}`;
   };
 
   return (
@@ -48,7 +48,7 @@ export default function TimeSelector() {
                   className="w-2 h-2 bg-white rounded-full"
                   style={{ opacity: selectedHour === hour ? 0 : 1 }}
                 />
-                <div className="text-white absolute top-4 left-1/2 transform -translate-x-1/2" style={{ marginTop: selectedHour === hour ? '8px' : '0' }}>
+                <div className="text-white text-xs absolute top-4 left-1/2 transform -translate-x-1/2" style={{ marginTop: selectedHour === hour ? '8px' : '0' }}>
                   {formatTime(hour)}
                 </div>
               </div>
