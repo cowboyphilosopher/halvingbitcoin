@@ -15,7 +15,7 @@ export default function EventsPage() {
           <div className="relative h-1/10 w-screen">
               <NavigationBar />
           </div>
-          <div className="flex h-1/2 w-1/2 justify-center items-center">
+          <div className="flex h-1/2 w-2/3 justify-center items-center">
             <div className="relative h-full w-full">
               <TimeSelector />
             </div>
