@@ -19,7 +19,7 @@ export default function Countdown() {
       setBlocksRemaining(remaining.toString());
     }
   }, [data]);
-    
+
   return (
     <div className="flex flex-col h-full">
       <div className="flex justify-center items-center bg-[#f7931a] text-xl text-white font-bold h-1/2 rounded-t-lg">

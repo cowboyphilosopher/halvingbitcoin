@@ -15,12 +15,12 @@ export default function EventsPage() {
           <div className="relative h-1/10 w-screen">
               <NavigationBar />
           </div>
-          <div className="flex h-1/10 w-full justify-center items-center mb-4">
+          {/* <div className="flex h-1/10 w-full justify-center items-center mb-4">
             <div className="relative h-full w-full">
               <Countdown />
             </div>
-          </div>
-          <div className="relative h-1/10 w-full flex flex-wrap justify-center items-center text-white mb-4">
+          </div> */}
+          {/* <div className="relative h-1/10 w-full flex flex-wrap justify-center items-center text-white mb-4">
             <div>
               <div className="text-center">
                 Total Party Funds: 126,471,081 sats
@@ -29,8 +29,8 @@ export default function EventsPage() {
                 Current Budget Per Event: 25,294,216 sats
               </div>
             </div>
-          </div>
-          <div className="flex h-1/2 w-3/4 justify-center items-center">
+          </div> */}
+          <div className="flex h-1/2 w-4/5 lg:w-1/2 justify-center items-center">
             <div className="h-full w-full">
               <TimeSelector />
             </div>

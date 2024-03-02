@@ -3,7 +3,7 @@ import { Button } from "components/Button/Button"
 
 export default function NavigationBar() {
   // Define inline styles for buttons
-  const buttonStyles = 'border rounded px-4 py-2 border-white text-base font-medium text-white bg-[#f7931a] hover:bg-[#c05000]';
+  const buttonStyles = 'border rounded px-4 py-2 border-white text-base lg:text-lg font-medium text-white bg-[#f7931a] hover:bg-[#c05000]';
   const buttonStylesMobile = 'sm:min-w-min';
 
   return (
