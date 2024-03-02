@@ -4,6 +4,8 @@ import React from 'react';
 import NavigationBar from 'components/Navigation';
 import WalletBalance from 'components/WalletTotal';
 import TimeSelector from 'components/TimeSelector';
+import PartyDay from 'components/PartyDay';
+import BoatDay from 'components/BoatDay';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 
@@ -30,9 +32,21 @@ export default function EventsPage() {
               </div>
             </div>
           </div> */}
-          <div className="flex h-1/2 w-4/5 lg:w-1/2 justify-center items-center">
-            <div className="h-full w-full">
+          <div className="flex h-1/2 w-full justify-center items-center">
+            <div className="w-full">
               <TimeSelector />
+            </div>
+          </div>
+
+          <div className="flex h-1/2 w-full justify-center items-center">
+            <div className="w-full mt-4">
+              <PartyDay />
+            </div>
+          </div>
+
+          <div className="flex h-1/2 w-full justify-center items-center">
+            <div className="w-full">
+              <BoatDay />
             </div>
           </div>
           {/* <div>

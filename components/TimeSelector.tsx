@@ -25,12 +25,18 @@ export default function TimeSelector() {
   };
 
   return (
-    <div className="w-full h-1/5 px-4 relative">
+    <div className="w-full px-4 relative">
       <div className="w-full mt-4 text-white text-sm md:text-base lg:text-lg text-center">
         The time that block 840,000 occurs will affect the schedule of the party.
       </div>
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
+        The ceremony for the halving will happen on block 840,000 regardless of the time.
+      </div>
+      <div className="w-full mb-4 text-white text-sm md:text-base lg:text-lg text-center">
          There are 2 main event days so please plan accordingly.
+      </div>
+      <div className="w-full mb-4 text-white text-sm md:text-base lg:text-lg text-center">
+        Let&apos;s assume that we can somehow know that block 840,000 is on 4/20 at the selected time.
       </div>
       <Range
         step={4}
@@ -41,8 +47,8 @@ export default function TimeSelector() {
         renderTrack={({ props, children }) => (
           <div
             {...props}
-            className="w-full h-5 bg-[#c05000] border border-white p-1 rounded-full mt-4 relative"
-            style={{ touchAction: 'none' }}
+            className="flex-center w-4/5 lg:w-1/2 h-5 bg-[#c05000] border border-white p-1 rounded-full mt-4 relative"
+            style={{ touchAction: 'none', margin: '0 auto' }}
           >
             {children}
             {[0, 4, 8, 12, 16, 20, 24].map((hour) => (
@@ -77,43 +83,117 @@ export default function TimeSelector() {
         )}
       />
       <div className="flex justify-center items-center h-3/5 mt-6">
-        <div className="text-white text-center mt-4">
-          <div>
-            Let&apos;s assume that block 840,000 is on 4/20 at the selected time. The ceremony for the halving will happen on block 840,000 regardless of the time.
-          </div>
+        <div className="text-white text-sm md:text-base lg:text-lg text-center mt-4">
           {selectedHour === 0 && (
-            <div>
-              If the block is around midnight of 4/19-4/20 then the family day is on 4/19 and boat day is 4/20. This is just shifting the day forward by 1 day. This allows for more people to stay and participate. 
+            <div className="flex-col justify-center items-center mt-2">
+              <div>
+                Around midnight of 4/19-4/20
+              </div>
+              <div>
+                Party Day: 4/19
+              </div>
+              <div>
+                Boat Day: 4/20
+              </div>
+              <div>
+              It will be like a New Year&apos;s Eve party when we celebrate. Although some with families might miss out on the ceremony.
+              </div>
             </div>
           )}
           {selectedHour === 4 && (
-            <div>
-              If the block is around 4am of 4/20 then the family day is on 4/19 and boat day is 4/20. Unfortunately most people will not be able to participate in the ceremony but the best bitcoiners will be there.
+            <div className="flex-col justify-center items-center mt-2">
+              <div>
+                Around 4am of 4/20
+              </div>
+              <div>
+                Party Day: 4/19
+              </div>
+              <div>
+                Boat Day: 4/20
+              </div>
+              <div>
+                Unfortunately most people will not be able to participate in the ceremony this late/early so only the best Bitcoiners will be there.
+              </div>
             </div>
           )}
           {selectedHour === 8 && (
+            <div className="flex-col justify-center items-center mt-2">
             <div>
-              If the block is around 8am of 4/20 then the family day is on 4/19 and boat day is 4/20. Early morning ceremony followed by the boat trip for members later that day. 
+              Around 8am of 4/20
             </div>
+            <div>
+              Party Day: 4/19
+            </div>
+            <div>
+              Boat Day: 4/20
+            </div>
+            <div>
+              Early morning ceremony followed by the boat trip for members later that day. Non members are still welcome at the venue to enjoy the ceremony. 
+            </div>
+          </div>
           )}
           {selectedHour === 12 && (
-            <div>
-              If the block is around Noon of 4/20 then the family day is on 4/20 and boat day is 4/21. This is a decent time but some people might not be at the venue for the party day yet. 
+            <div className="flex-col justify-center items-center mt-2">
+              <div>
+                Around Noon of 4/20
+              </div>
+              <div>
+                Party Day: 4/20
+              </div>
+              <div>
+                Boat Day: 4/21
+              </div>
+              <div>
+                This is a decent time for the ceremony but some people might not be at the venue for the party day yet. 
+              </div>
             </div>
           )}
           {selectedHour === 16 && (
-            <div>
-              If the block is around 4pm of 4/20 then the family day is on 4/20 and boat day is 4/21. Even better time for the ceremony with more people having arrived and the event will be in full swing.
+            <div className="flex-col justify-center items-center mt-2">
+              <div>
+                Around 4pm of 4/20
+              </div>
+              <div>
+                Party Day: 4/20
+              </div>
+              <div>
+                Boat Day: 4/21
+              </div>
+              <div>
+                Great time for the ceremony with more people having arrived and the event will be in full swing.
+              </div>
             </div>
           )}
           {selectedHour === 20 && (
-            <div>
-              If the block is around 8pm of 4/20 then the family day is on 4/20 and boat day is 4/21. The ideal time for the halving ceremony. Most people will have arrived and dinner will have been served. Great time for desserts and drinks to celebrate the halving.
+            <div className="flex-col justify-center items-center mt-2">
+              <div>
+                Around 8pm of 4/20
+              </div>
+              <div>
+                Party Day: 4/20
+              </div>
+              <div>
+                Boat Day: 4/21
+              </div>
+              <div>
+                The ideal time for the halving ceremony. Most people will have arrived and eaten dinner. Great time for desserts and drinks to celebrate the halving.
+              </div>
             </div>
           )}
           {selectedHour === 24 && (
-            <div>
-              If the block is around midnight of 4/20-4/21 then the family day is on 4/20 and boat day is 4/21. Another great time since it will be like a new years countdown although some families will probably miss out due to it being later.
+            <div className="flex-col justify-center items-center mt-2">
+              <div>
+                Around Midnight of 4/20-4/21
+              </div>
+              <div>
+                Party Day: 4/20
+              </div>
+              <div>
+                Boat Day: 4/21
+              </div>
+              <div>
+                It will be like a New Year&apos;s Eve party when we celebrate. Although some with families might miss out on the ceremony.
+              </div>
             </div>
           )}
           {/* Add more divs as needed for other selected hours */}
