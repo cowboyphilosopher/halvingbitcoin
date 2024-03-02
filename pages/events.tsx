@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import React from 'react';
 import NavigationBar from 'components/Navigation';
 import WalletBalance from 'components/WalletTotal';
+import { Button } from "components/Button/Button"
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 
@@ -14,25 +15,27 @@ export default function EventsPage() {
           <div className="relative h-1/10 w-screen">
               <NavigationBar />
           </div>
-          <div className="flex h-1/10 w-full justify-center items-center">
+          <div className="flex h-1/10 mb-4 w-full justify-center items-center">
             <div className="relative h-full w-full">
               <Countdown />
             </div>
           </div>
-          <div className="relative h-1/10 w-full flex flex-wrap justify-center items-center text-white">
+          <div className="relative mb-4 h-1/10 w-full flex flex-wrap justify-center items-center text-white">
             <div>
               <div className="text-center">
-                Total Party Funds: 126,471,081 sats
+                Total Party Funds: 131,541,750 sats
               </div>
               <div className="text-center">
-                Current Budget Per Event: 25,294,216 sats
+                Current Budget Per Event: 26,308,350 sats
               </div>
             </div>
           </div>
-          <div className="relative h-1/3 w-full flex justify-center items-center text-white px-4">
+          <div className="relative h-1/3 mb-4 w-full flex justify-center items-center text-white px-4">
             <div>
-              <div className="text-center">
-                Event 1: Block 840,000
+              <div>
+                <Button href="/event1" className="text-center border rounded px-4 py-2 border-white text-base font-medium text-white bg-[#f7931a] hover:bg-[#c05000]">
+                  Event 1: Block 840,000
+                </Button>
               </div>
               <div className="text-center">
                 Event 2: Block 1,050,000

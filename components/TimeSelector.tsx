@@ -26,7 +26,10 @@ export default function TimeSelector() {
 
   return (
     <div className="w-full px-4 relative">
-      <div className="w-full mt-4 text-white text-sm md:text-base lg:text-lg text-center">
+      <div className="w-full text-white text-lg md:text-xl lg:text-2xl text-center">
+        Event Schedule
+      </div>
+      <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
         The time that block 840,000 occurs will affect the schedule of the party.
       </div>
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">

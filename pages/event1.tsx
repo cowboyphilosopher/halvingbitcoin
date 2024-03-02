@@ -6,6 +6,7 @@ import WalletBalance from 'components/WalletTotal';
 import TimeSelector from 'components/TimeSelector';
 import PartyDay from 'components/PartyDay';
 import BoatDay from 'components/BoatDay';
+import EventInfo from 'components/EventInfo';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
 
 
@@ -32,23 +33,43 @@ export default function EventsPage() {
               </div>
             </div>
           </div> */}
-          <div className="flex h-1/2 w-full justify-center items-center">
+
+          <div className="flex w-full justify-center items-center">
             <div className="w-full">
+              <EventInfo />
+            </div>
+          </div>
+
+          <div className="flex w-full justify-center items-center">
+            <div className="w-full mt-4">
               <TimeSelector />
             </div>
           </div>
 
-          <div className="flex h-1/2 w-full justify-center items-center">
+          
+
+          <div className="flex w-full justify-center items-center">
             <div className="w-full mt-4">
               <PartyDay />
             </div>
           </div>
 
-          <div className="flex h-1/2 w-full justify-center items-center">
+          <div className="flex w-full justify-center items-center">
             <div className="w-full">
               <BoatDay />
             </div>
           </div>
+
+          <div className="relative mt-4 mb-4 w-full flex flex-wrap justify-center items-center text-white text-sm md:text-base lg:text-lg">
+          <div>
+            <div className="text-center">
+              If you have any special accommodation needs or requests please let me know. I would also love suggestions for caterers or activities if you have something in mind.
+            </div>
+            <div className="text-center">
+              btcwiseops@gmail.com
+            </div>
+          </div>
+        </div>
           {/* <div>
             <h1>Bitcoin Wallet Balance</h1>
             <WalletBalance zpubKey={"Zpub75bvHhALtQr49PzycX6sdDVxuNffRSV3N1Z6LX5qzx9ptKtefL7HJVZ3q8vFqYQ9sXJPGFtFdtPFeZsRzJQaowNMVPxQFgaRKK9QSzoMvDQ"} />
