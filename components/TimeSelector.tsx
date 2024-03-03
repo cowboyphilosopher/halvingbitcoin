@@ -115,7 +115,7 @@ export default function TimeSelector() {
                 Boat Day: 4/20
               </div>
               <div>
-                Unfortunately most people will not be able to participate in the ceremony this late/early so only the best Bitcoiners will be there.
+                Unfortunately most people will not be able to participate in the ceremony this late/early so only the Best Bitcoiners will be there.
               </div>
             </div>
           )}
@@ -163,7 +163,7 @@ export default function TimeSelector() {
                 Boat Day: 4/21
               </div>
               <div>
-                Great time for the ceremony with more people having arrived and the event will be in full swing.
+                Good time for the ceremony with more people having arrived and the event will be in full swing.
               </div>
             </div>
           )}
