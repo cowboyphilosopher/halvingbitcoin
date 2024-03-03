@@ -22,7 +22,7 @@ export default function PartyDay() {
         The day of the halving there will be a pool party and catered food/dessert carts.
       </div>
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
-         Members are encouraged to bring precoiners like friends and family to join in the fun on this day.
+         Members are encouraged to bring friends and family to join in the fun on this day.
       </div>
       {/* <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
         There will be activities for smaller kids such as a bounce house. 
