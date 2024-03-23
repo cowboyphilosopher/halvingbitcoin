@@ -7,7 +7,7 @@ export default function PartyDay() {
   return (
     <div className="w-full px-4 relative">
       <div className="w-full text-white text-lg md:text-xl lg:text-2xl text-center">
-       4/20 - Friends and Family Day
+       4/19 - Hangout Day
       </div>
       {/* <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
          We have booked a house for the 18th-22nd of April.
@@ -16,26 +16,19 @@ export default function PartyDay() {
          The location is subject to change only if we find an even better venue.
       </div> */}
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
-         Any day that we have the venue members are welcome to stop by to hang out and enjoy the amenities.
+         Friday night we will have a small gathering for bitcoiners.
       </div>
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
-        Saturday there will be a pool party and catered food/dessert carts.
+        Anyone currently in our bitcoin chats are welcome to hang out and talk bitcoin in style. 
       </div>
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
-         Members are encouraged to bring friends and family to join in the fun on this day.
+        We can order some food/drinks from the local restaurants. 
       </div>
       {/* <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
         There will be activities for smaller kids such as a bounce house. 
       </div> */}
       {/* <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
         If anyone needs to crash to stay for the ceremony or boat day there will be several beds available. 
-      </div> */}
-      {/* <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
-        <a href="https://www.vrbo.com/920820" className="text-white underline hover:text-gray-300">Check out the place here</a>
-      </div>
-
-      <div className="w-full mb-4 text-white text-sm md:text-base lg:text-lg text-center">
-      <a href="https://youtu.be/vCJeViNiy20?si=X8BxEIAEyUUvZTVI" className="text-white underline hover:text-gray-300">Also a small video tour here</a>
       </div> */}
     </div>
   );

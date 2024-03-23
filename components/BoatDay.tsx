@@ -7,7 +7,7 @@ export default function BoatDay() {
   return (
     <div className="w-full px-4 relative">
       <div className="w-full text-white text-lg md:text-xl lg:text-2xl text-center">
-        Party Boat Day
+      4/21 - Party Boat Day
       </div>
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
          Keeping with the theme of bitcoin the boat is called &quot;Bella Luna&quot; which means Beautiful Moon.
@@ -29,9 +29,9 @@ export default function BoatDay() {
       {/* <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
         <a href="https://www.bellalunayacht.com/" className="text-white underline hover:text-gray-300">Check out the boat here</a>
       </div> */}
-      <div className="w-full mb-4 text-white text-sm md:text-base lg:text-lg text-center">
+      {/* <div className="w-full mb-4 text-white text-sm md:text-base lg:text-lg text-center">
       <a href="https://www.instagram.com/bellalunayacht/" className="text-white underline hover:text-gray-300">The boat has an instagram with more followers than me!</a>
-      </div>
+      </div> */}
     </div>
   );
 }

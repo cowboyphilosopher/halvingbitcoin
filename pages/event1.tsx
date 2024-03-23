@@ -5,6 +5,7 @@ import NavigationBar from 'components/Navigation';
 import WalletBalance from 'components/WalletTotal';
 import TimeSelector from 'components/TimeSelector';
 import PartyDay from 'components/PartyDay';
+import PizzaDay from 'components/PizzaDay';
 import BoatDay from 'components/BoatDay';
 import EventInfo from 'components/EventInfo';
 const Countdown = dynamic(() => import('components/Countdown'), { ssr: false });
@@ -40,13 +41,17 @@ export default function EventsPage() {
             </div>
           </div>
 
-          <div className="flex w-full justify-center items-center">
+          {/* <div className="flex w-full justify-center items-center">
             <div className="w-full mt-4">
               <TimeSelector />
             </div>
-          </div>
+          </div> */}
 
-          
+          <div className="flex w-full justify-center items-center">
+            <div className="w-full mt-4">
+              <PizzaDay />
+            </div>
+          </div>
 
           <div className="flex w-full justify-center items-center">
             <div className="w-full mt-4">
@@ -55,7 +60,7 @@ export default function EventsPage() {
           </div>
 
           <div className="flex w-full justify-center items-center">
-            <div className="w-full">
+          <div className="w-full mt-4">
               <BoatDay />
             </div>
           </div>

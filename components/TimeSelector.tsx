@@ -29,12 +29,12 @@ export default function TimeSelector() {
       <div className="w-full text-white text-lg md:text-xl lg:text-2xl text-center">
         Event Schedule
       </div>
-      <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
+      {/* <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
         The time that block 840,000 occurs will affect the schedule of the party.
       </div>
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
         The ceremony for the halving will happen on block 840,000 regardless of the time.
-      </div>
+      </div> */}
       <div className="w-full mb-4 text-white text-sm md:text-base lg:text-lg text-center">
          There are 2 main event days so please plan accordingly.
       </div>
@@ -92,12 +92,12 @@ export default function TimeSelector() {
               <div>
                 Around midnight of 4/19-4/20
               </div>
-              <div>
+              {/* <div>
                 Party Day: 4/19
               </div>
               <div>
                 Boat Day: 4/20
-              </div>
+              </div> */}
               <div>
               It will be like a New Year&apos;s Eve party when we celebrate. Although some with families might miss out on the ceremony.
               </div>
@@ -108,12 +108,12 @@ export default function TimeSelector() {
               <div>
                 Around 4am of 4/20
               </div>
-              <div>
+              {/* <div>
                 Party Day: 4/19
               </div>
               <div>
                 Boat Day: 4/20
-              </div>
+              </div> */}
               <div>
                 Unfortunately most people will not be able to participate in the ceremony this late/early so only the Best Bitcoiners will be there.
               </div>
@@ -124,12 +124,12 @@ export default function TimeSelector() {
             <div>
               Around 8am of 4/20
             </div>
-            <div>
+            {/* <div>
               Party Day: 4/19
             </div>
             <div>
               Boat Day: 4/20
-            </div>
+            </div> */}
             <div>
               Early morning ceremony followed by the boat trip for members later that day. Non members are still welcome at the venue to enjoy the ceremony. 
             </div>
@@ -140,12 +140,12 @@ export default function TimeSelector() {
               <div>
                 Around Noon of 4/20
               </div>
-              <div>
+              {/* <div>
                 Party Day: 4/20
               </div>
               <div>
                 Boat Day: 4/21
-              </div>
+              </div> */}
               <div>
                 This is a decent time for the ceremony but some people might not be at the venue for the party day yet. 
               </div>
@@ -156,12 +156,12 @@ export default function TimeSelector() {
               <div>
                 Around 4pm of 4/20
               </div>
-              <div>
+              {/* <div>
                 Party Day: 4/20
               </div>
               <div>
                 Boat Day: 4/21
-              </div>
+              </div> */}
               <div>
                 Good time for the ceremony with more people having arrived and the event will be in full swing.
               </div>
@@ -172,12 +172,12 @@ export default function TimeSelector() {
               <div>
                 Around 8pm of 4/20
               </div>
-              <div>
+              {/* <div>
                 Party Day: 4/20
               </div>
               <div>
                 Boat Day: 4/21
-              </div>
+              </div> */}
               <div>
                 The ideal time for the halving ceremony. Most people will have arrived and eaten dinner. Great time for desserts and drinks to celebrate the halving.
               </div>
@@ -188,12 +188,12 @@ export default function TimeSelector() {
               <div>
                 Around Midnight of 4/20-4/21
               </div>
-              <div>
+              {/* <div>
                 Party Day: 4/20
               </div>
               <div>
                 Boat Day: 4/21
-              </div>
+              </div> */}
               <div>
                 It will be like a New Year&apos;s Eve party when we celebrate. Although some with families might miss out on the ceremony.
               </div>
