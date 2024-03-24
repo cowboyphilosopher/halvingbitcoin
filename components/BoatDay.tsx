@@ -7,7 +7,7 @@ export default function BoatDay() {
   return (
     <div className="w-full px-4 relative">
       <div className="w-full text-white text-lg md:text-xl lg:text-2xl text-center">
-      4/21 - Party Boat Day
+      4/21 - Party Boat Evening
       </div>
       <div className="w-full text-white text-sm md:text-base lg:text-lg text-center">
          Keeping with the theme of bitcoin the boat is called &quot;Bella Luna&quot; which means Beautiful Moon.
